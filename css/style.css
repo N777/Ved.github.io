@@ -1,0 +1,35 @@
+.blur ::backdrop {
+  filter: blur(5px);
+}
+* {
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  overflow: hidden;
+  height: 100vh;
+  background-image: url("../img/asd.jpg");
+  background-size: cover;
+}
+
+.flex {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+}
+.item {
+  height: 400px;
+  margin: auto;
+  flex: 20%;
+  background-size: cover !important;
+  transition: flex 300ms ease;
+  box-shadow: 0 0 19px 3px #000;
+  margin: 1px;
+}
+.item:hover {
+  flex: 0.1 0.1 700px;
+}

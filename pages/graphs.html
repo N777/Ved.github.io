@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link href="../js/c3/c3.css" rel="stylesheet">
+    <script src="../js/c3/d3.min.js" charset="utf-8"></script>
+    <script src="../js/c3/c3.min.js"></script>
+    <link rel="stylesheet" href="../css/graphs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="../index.html">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nvidia.html">История</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="graphs.html">График</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="graphs.html">Источники</a>
+        </li>
+        </li>
+      </ul>
+      <div class="container d-flex flex-column align-content-center justify-content-center ml-auto">
+      <h3 style="text-align: center;">Графики акций компаний AMD(ATI) и NVIDIA</h3>
+    <div class="d-flex justify-content-center align-items-center" id="chart"></div>
+  </div>
+  <div class="footer">
+    <p>Научный руководитель: Рогова Татьяна Николаевна</p>
+    <p>Выполнили работу: Еремеева Юлия, Егоров Вадим</p>
+    <p>Группа: ИВТАСбд-11</p>
+  </div>
+    <script>
+        var chart = c3.generate({
+        size: {
+        height: 500,
+    },
+        padding: {
+        top: 40,
+        bottom: 40,
+    },
+    bindto: '#chart',
+    data: {
+        xs: {
+        'AMD': 'x1',
+        'NVIDIA': 'x2',},
+        columns: [
+        ['x2',1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
+        ['x1',1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
+        ['AMD', 3.61, 3.94, 3.27, 9, 15.81, 16.63, 13.69, 8.75, 6, 4.44, 4.13, 3.63, 9.19, 10.88, 10.25, 15.19, 9.69, 17.56, 11.75, 11.47, 28.53, 24.6, 14.71, 7.44, 15, 16.4, 33.16, 14.27, 5.96, 2.18, 7.91, 8.6, 4.06, 3.77, 3.91, 2.68, 6.86, 10.89, 25.17, 23.53, 39.61],
+        ['NVIDIA', 1.83, 3.09, 18.21, 17, 4.29, 7.42, 9.66, 15, 20.43, 8.76, 7.95, 15.39, 22.16, 14.77, 12.66, 15.7, 19.2, 29.29, 101.48, 242, 143.75, 205.75, ]
+      ],
+        colors: {
+            AMD: '#FF0000',
+            NVIDIA: '#00FF00'
+        },
+    }
+});
+
+    </script>
+</body>
+
+</html>
