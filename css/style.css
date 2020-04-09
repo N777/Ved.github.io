@@ -23,7 +23,7 @@ body {
   align-items: center;
 }
 .item {
-  min-width: 80vh;
+
   height: 400px;
   margin: auto;
   flex: 20%;
@@ -38,6 +38,7 @@ body {
 
 @media screen and (max-width: 500px){
   .flex{
+    min-width: 80vh;
     flex-direction: column;
   }
 }
