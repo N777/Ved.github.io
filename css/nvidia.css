@@ -18,6 +18,9 @@ ul {
 * {
   font-family: "Open Sans", sans-serif;
 }
+.card-img-overlay{
+  top: auto;
+}
 .footer {
   align-items: center;
   justify-content: space-around;
